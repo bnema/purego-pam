@@ -1,0 +1,25 @@
+all: false
+formatter: goimports
+force-file-write: true
+structname: '{{.Mock}}{{.InterfaceName}}'
+template: testify
+template-schema: '{{.Template}}.schema.json'
+require-template-schema-exists: true
+packages:
+  github.com/bnema/purego-pam:
+    interfaces:
+      libraryFunctions:
+        config:
+          dir: .
+          pkgname: pam
+          filename: library_functions_mock_test.go
+      Conversation:
+        config:
+          dir: .
+          pkgname: pam
+          filename: conversation_mock_test.go
+      nativeMemory:
+        config:
+          dir: .
+          pkgname: pam
+          filename: native_memory_mock_test.go
