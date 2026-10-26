@@ -8,7 +8,7 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/bnema/purego"
+	"bnema.dev/purego"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 )

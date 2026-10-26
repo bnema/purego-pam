@@ -1,7 +1,7 @@
 # purego-pam
 
 Linux-PAM binding for **Go 1.27**, normally built with
-**CGO_ENABLED=0**, using `github.com/bnema/purego`. Supported ABI targets:
+**CGO_ENABLED=0**, using `bnema.dev/purego`. Supported ABI targets:
 Linux amd64 and arm64 (LP64, 32-bit C `int`). This is not an authentication
 product.
 
@@ -80,7 +80,7 @@ responses after ownership transfer remain outside the library's wiping control.
 
 ## Development
 
-Production code depends on `github.com/bnema/purego` and the standard library. Tests use Mockery v3's
+Production code depends on `bnema.dev/purego` and the standard library. Tests use Mockery v3's
 generated testify mocks of PAM calls, conversation handlers and native memory
 through `EXPECT()` and
 `RunAndReturn`, alongside real libc allocations.
